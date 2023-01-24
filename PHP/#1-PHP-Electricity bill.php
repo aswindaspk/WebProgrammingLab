@@ -1,12 +1,24 @@
 <html>
+<head>
+<style>
+<html><head>
+<style>
+fieldset {
+  font-size:20px;
+  padding:10px;
+  width:100x;
+  line-height:1.8;}</style>
+<title>Electricity Bill</title>
+</head>
 <body>
-<h1>Electricity Bill</h1>
+<center><fieldset>
+<h3>ELECTRICITY BILL</h3>
 <form method="post" action="#">
 Consumer ID:<br><input type="number" name="id"><br>
 Name:<br><input type="text" name="name"><br>
 Units Consumed:<br><input type="number" name="units"><br>
 <input type="Submit" name="Calculate Amount">
-<input type="reset" name="Reset"><br>
+<input type="reset" name="Reset"><br></fieldset></center>
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
